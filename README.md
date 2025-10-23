@@ -1,5 +1,7 @@
 # domscribr
 
+a DOM scribe that records and exports LLM chat pages.
+
 A Chromium extension that records DOM-based chat conversations from LLM interfaces and exports them as rich JSON transcripts.
 
 ## Features
