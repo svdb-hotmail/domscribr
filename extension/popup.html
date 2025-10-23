@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>domscribr</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>domscribr</h1>
+        <p class="subtitle">Capture conversations from LLM chat interfaces.</p>
+      </header>
+      <section class="status" aria-live="polite">
+        <div class="status-row">
+          <span class="label">Status</span>
+          <span class="value" id="status-text">Idle</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Messages</span>
+          <span class="value" id="status-count">0</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Last capture</span>
+          <span class="value" id="status-last">—</span>
+        </div>
+        <p class="status-message" id="status-message" hidden></p>
+      </section>
+      <section class="actions">
+        <button id="start-btn" class="primary">Start recording</button>
+        <button id="stop-btn" class="secondary" disabled>Stop</button>
+        <button id="export-btn" class="secondary" disabled>Export JSON</button>
+      </section>
+      <footer>
+        <p>Recording runs on the active tab. Switch to the chat tab before starting.</p>
+      </footer>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

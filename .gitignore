@@ -1,0 +1,39 @@
+# === Node / Tooling ===
+node_modules/
+dist/
+build/
+out/
+.cache/
+coverage/
+.tmp/
+*.log
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === IDEs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Archives / Generated exports ===
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# === Local test / debug outputs ===
+test-output/
+exports/
+history/
+temp/
+tmp/
+
+# === Browser / tooling caches ===
+.npm/
+.yarn/
+.pnpm-store/

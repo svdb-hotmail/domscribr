@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  min-width: 260px;
+}
+
+main {
+  padding: 16px;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.96));
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.status {
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.status-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.label {
+  color: #94a3b8;
+}
+
+.value {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.status-message {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #facc15;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border 0.15s ease;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0f172a;
+  box-shadow: 0 8px 16px rgba(14, 165, 233, 0.35);
+}
+
+button.secondary {
+  background-color: rgba(148, 163, 184, 0.2);
+  border-color: rgba(148, 163, 184, 0.35);
+  color: #e2e8f0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.45);
+}
+
+footer {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.status-message[data-tone="success"] {
+  color: #34d399;
+}
+
+.status-message[data-tone="error"] {
+  color: #f87171;
+}
+
+.status-message[data-tone="info"] {
+  color: #facc15;
+}
