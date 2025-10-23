@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "domscribr",
+  "version": "0.1.0",
+  "description": "Record DOM conversations from LLM chat pages and export them as JSON.",
+  "permissions": ["storage", "scripting", "activeTab", "downloads", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "domscribr"
+  }
+}

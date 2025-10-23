@@ -1,0 +1,11 @@
+{
+  "name": "domscribr",
+  "version": "0.1.0",
+  "description": "A Chromium extension that records DOM-based LLM chat conversations and exports them as JSON.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "echo 'No lint configuration yet'",
+    "package": "mkdir -p dist && zip -r dist/domscribr.zip extension"
+  }
+}
