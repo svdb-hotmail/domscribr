@@ -1,2 +1,3 @@
-# domscribr
-a DOM scribe that records and exports LLM chat pages.
+# Chat Export Tools
+
+See individual .js files for usage.
