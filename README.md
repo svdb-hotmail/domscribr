@@ -40,3 +40,6 @@ The resulting file is compatible with downstream tooling or custom scripts for a
 - Styling in the popup relies on modern CSS (flexbox and gradients) but does not require a bundler or build pipeline.
 
 Contributions are welcome—feel free to open issues or submit pull requests with improvements.
+# Chat Export Tools
+
+See individual .js files for usage.
